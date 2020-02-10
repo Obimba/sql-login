@@ -2,9 +2,9 @@
 session_start();
 if($_SESSION['bankinfo'])
 {
-	echo "login successful";
+	header("location: mainpage.php");
 }else{
-header("locaton: gogle.com");
+header("locaton: index.php");
 }
 
 ?>

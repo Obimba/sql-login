@@ -20,7 +20,7 @@ session_start();
 $query="select * from bankinfo where userid='$userid' and password='$password'";
 $result=mysqli_query($conn,$query);
 $_SESSION['bankinfo']=true;
-	header("location: ClientArea");
+	header("location: ClientArea.php");
 }
 
 ?>
